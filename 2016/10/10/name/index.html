@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Django," />
 
 
 
@@ -84,28 +84,25 @@
 
 
 
-<meta name="description" content="Django专题之 邮件标签（空格分隔）： Django
-
+<meta name="description" content="Django专题之 邮件
 花了三个小时才搞定配置, lol, 坑爹的墙, 要不然直接用gmail就好了.
 参考链接1.8官方中文文档:发送邮件 翻译了一小半,有兴趣可以看看英文.Django1.4中文文档Django简单邮件系统 贴出了各大型邮箱smtp服务器及端口收集Django 1.8 邮件系统
-1. 定义外部SMTP(简单邮件传输协议)配置.在setting">
+1.定义外部SMTP(简单邮件传输协议)配置.在setting.py文件添加如下:123456EM">
 <meta property="og:type" content="article">
 <meta property="og:title" content="name">
 <meta property="og:url" content="http://yoursite.com/2016/10/10/name/index.html">
 <meta property="og:site_name" content="Yang">
-<meta property="og:description" content="Django专题之 邮件标签（空格分隔）： Django
-
+<meta property="og:description" content="Django专题之 邮件
 花了三个小时才搞定配置, lol, 坑爹的墙, 要不然直接用gmail就好了.
 参考链接1.8官方中文文档:发送邮件 翻译了一小半,有兴趣可以看看英文.Django1.4中文文档Django简单邮件系统 贴出了各大型邮箱smtp服务器及端口收集Django 1.8 邮件系统
-1. 定义外部SMTP(简单邮件传输协议)配置.在setting">
-<meta property="og:updated_time" content="2016-10-09T09:11:34.665Z">
+1.定义外部SMTP(简单邮件传输协议)配置.在setting.py文件添加如下:123456EM">
+<meta property="og:updated_time" content="2016-10-09T09:17:04.741Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="name">
-<meta name="twitter:description" content="Django专题之 邮件标签（空格分隔）： Django
-
+<meta name="twitter:description" content="Django专题之 邮件
 花了三个小时才搞定配置, lol, 坑爹的墙, 要不然直接用gmail就好了.
 参考链接1.8官方中文文档:发送邮件 翻译了一小半,有兴趣可以看看英文.Django1.4中文文档Django简单邮件系统 贴出了各大型邮箱smtp服务器及端口收集Django 1.8 邮件系统
-1. 定义外部SMTP(简单邮件传输协议)配置.在setting">
+1.定义外部SMTP(简单邮件传输协议)配置.在setting.py文件添加如下:123456EM">
 
 
 
@@ -319,11 +316,10 @@
       
 
       
-        <h1 id="Django专题之-邮件"><a href="#Django专题之-邮件" class="headerlink" title="Django专题之 邮件"></a>Django专题之 邮件</h1><p>标签（空格分隔）： Django</p>
-<hr>
+        <h1 id="Django专题之-邮件"><a href="#Django专题之-邮件" class="headerlink" title="Django专题之 邮件"></a>Django专题之 邮件</h1><hr>
 <p>花了三个小时才搞定配置, lol, 坑爹的墙, 要不然直接用gmail就好了.</p>
 <h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="http://python.usyiyi.cn/django/topics/templates.html" target="_blank" rel="external">1.8官方中文文档:发送邮件</a> 翻译了一小半,有兴趣可以看看英文.<br><a href="https://django-chinese-docs-14.readthedocs.io/en/latest/topics/email.html" target="_blank" rel="external">Django1.4中文文档</a><br><a href="http://www.cnblogs.com/BeginMan/p/3443158.html" target="_blank" rel="external">Django简单邮件系统</a> 贴出了各大型邮箱smtp服务器及端口收集<br><a href="https://www.huangwenchao.com.cn/2015/09/django-1-8-mail.html" target="_blank" rel="external">Django 1.8 邮件系统</a></p>
-<h2 id="1-定义外部SMTP-简单邮件传输协议-配置"><a href="#1-定义外部SMTP-简单邮件传输协议-配置" class="headerlink" title="1. 定义外部SMTP(简单邮件传输协议)配置."></a>1. 定义外部SMTP(简单邮件传输协议)配置.</h2><p>在<code>setting.py</code>文件添加如下:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">EMAIL_HOST = &apos;smtp.163.com&apos;  # SMTP服务器主机,默认为localhost. 这里采用的是163邮箱服务器主机. 要采用其他邮箱服务器可参考&apos;Django简单邮件系统链接&apos;.</div><div class="line">EMAIL_HOST_USER = &apos;xxxxxxx@163.com&apos;  # 邮箱地址</div><div class="line">EMAIL_HOST_PASSWORD = &apos;xxxx&apos;  # 邮箱密码,注意这里是授权码,而不是原来的邮箱密码,否则会失败.</div><div class="line">EMAIL_PORT = 25 #邮箱服务器端口地址</div><div class="line">EMAIL_SUBJECT_PREFIX = &apos;django&apos; #为邮件Subject-line(标题)前缀,默认是&apos;[django]&apos;</div><div class="line">EMALI_USE_TLS = True  # 与SMTP服务器通信时,是否启动TLS链接(安全链接), 默认是Fasle.</div></pre></td></tr></table></figure></p>
+<h2 id="1-定义外部SMTP-简单邮件传输协议-配置"><a href="#1-定义外部SMTP-简单邮件传输协议-配置" class="headerlink" title="1.定义外部SMTP(简单邮件传输协议)配置."></a>1.定义外部SMTP(简单邮件传输协议)配置.</h2><p>在<code>setting.py</code>文件添加如下:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">EMAIL_HOST = &apos;smtp.163.com&apos;  # SMTP服务器主机,默认为localhost. 这里采用的是163邮箱服务器主机. 要采用其他邮箱服务器可参考&apos;Django简单邮件系统链接&apos;.</div><div class="line">EMAIL_HOST_USER = &apos;xxxxxxx@163.com&apos;  # 邮箱地址</div><div class="line">EMAIL_HOST_PASSWORD = &apos;xxxx&apos;  # 邮箱密码,注意这里是授权码,而不是原来的邮箱密码,否则会失败.</div><div class="line">EMAIL_PORT = 25 #邮箱服务器端口地址</div><div class="line">EMAIL_SUBJECT_PREFIX = &apos;django&apos; #为邮件Subject-line(标题)前缀,默认是&apos;[django]&apos;</div><div class="line">EMALI_USE_TLS = True  # 与SMTP服务器通信时,是否启动TLS链接(安全链接), 默认是Fasle.</div></pre></td></tr></table></figure></p>
 <h3 id="1-1-所使用的邮箱必须支持SMIP协议"><a href="#1-1-所使用的邮箱必须支持SMIP协议" class="headerlink" title="1.1 所使用的邮箱必须支持SMIP协议"></a>1.1 所使用的邮箱必须支持SMIP协议</h3><p>邮箱需要它支持SMTP（能通过邮箱客户端软件发送邮件）。如果测试失败<em>请参考下面第二步测试</em>说明你的邮箱没有提供SMTP（只能登陆邮箱的网站来发送邮件）.</p>
 <p> 如果你的邮箱你确认支持SMT(<a href="http://blog.sina.com.cn/s/blog_6e3e515c0102vm35.html" target="_blank" rel="external">国内外主流邮箱SMTP设置大观</a>)，其他可能导致测试失败的原因如下：</p>
 <p>1、你在邮箱以达到最大发送数量邮件无法发送时测试邮箱是否支持SMTP。测试邮箱是否支持SMTP的原理就是用你测试的邮箱给自己发送1封邮件，这时因为邮箱服务器暂时限制了你发送邮件，而你又使用测试功能所以肯定会得出测试失败。</p>
@@ -365,6 +361,12 @@ connection: 发送邮件用的后端，如果不提供，将使用 Email backend
     </div>
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Django/" rel="tag">#Django</a>
+          
+        </div>
       
 
       
@@ -453,6 +455,13 @@ connection: 发送邮件用的后端，如果不提供，将使用 Email backend
           
 
           
+            <div class="site-state-item site-state-tags">
+              <a href="/标签">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
 
         </nav>
 
@@ -477,7 +486,7 @@ connection: 发送邮件用的后端，如果不提供，将使用 Email backend
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Django专题之-邮件"><span class="nav-number">1.</span> <span class="nav-text">Django专题之 邮件</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#参考链接"><span class="nav-number">1.1.</span> <span class="nav-text">参考链接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-定义外部SMTP-简单邮件传输协议-配置"><span class="nav-number">1.2.</span> <span class="nav-text">1. 定义外部SMTP(简单邮件传输协议)配置.</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-所使用的邮箱必须支持SMIP协议"><span class="nav-number">1.2.1.</span> <span class="nav-text">1.1 所使用的邮箱必须支持SMIP协议</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-EMAIL-HOST-PASSWORD-39-xxxx-39-设置"><span class="nav-number">1.2.2.</span> <span class="nav-text">1.2 EMAIL_HOST_PASSWORD = 'xxxx'设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-3-POP3、SMTP、IMAP和Exchange的区别在哪里"><span class="nav-number">1.2.3.</span> <span class="nav-text">1.3 POP3、SMTP、IMAP和Exchange的区别在哪里</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-测试"><span class="nav-number">1.3.</span> <span class="nav-text">2. 测试</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Django专题之-邮件"><span class="nav-number">1.</span> <span class="nav-text">Django专题之 邮件</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#参考链接"><span class="nav-number">1.1.</span> <span class="nav-text">参考链接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-定义外部SMTP-简单邮件传输协议-配置"><span class="nav-number">1.2.</span> <span class="nav-text">1.定义外部SMTP(简单邮件传输协议)配置.</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-所使用的邮箱必须支持SMIP协议"><span class="nav-number">1.2.1.</span> <span class="nav-text">1.1 所使用的邮箱必须支持SMIP协议</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-EMAIL-HOST-PASSWORD-39-xxxx-39-设置"><span class="nav-number">1.2.2.</span> <span class="nav-text">1.2 EMAIL_HOST_PASSWORD = 'xxxx'设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-3-POP3、SMTP、IMAP和Exchange的区别在哪里"><span class="nav-number">1.2.3.</span> <span class="nav-text">1.3 POP3、SMTP、IMAP和Exchange的区别在哪里</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-测试"><span class="nav-number">1.3.</span> <span class="nav-text">2. 测试</span></a></li></ol></li></ol></div>
             
           </div>
         </section>
